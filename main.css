@@ -9,8 +9,7 @@ ul {
     margin: 0; /* Removes browser default settings */
     padding: 0; /* Removes browser default settings */
     background-color: #333;
-    overflow: hidden; 
-    /* overflow property manipulates our elements content if it's too big to fit in the space its occupying. Since our <ul> now only contains floated <li> elements, this makes it collapse to a height of zero, so we need to set our overflow to hidden to see our background color. We could also give our <ul> a height property instead of an overflow of hidden. Setting the overflow to hidden instead of giving our <ul> a height property allows us to change the height of our navbar with padding like we did in our a tags, and the text within the navbar will always be centered */
+    overflow: hidden; /* overflow property manipulates our elements content if it's too big to fit in the space its occupying. Since our <ul> now only contains floated <li> elements, this makes it collapse to a height of zero, so we need to set our overflow to hidden to see our background color. We could also give our <ul> a height property instead of an overflow of hidden. Setting the overflow to hidden instead of giving our <ul> a height property allows us to change the height of our navbar with padding like we did in our a tags, and the text within the navbar will always be centered */
 }
 
 li {
