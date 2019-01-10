@@ -9,14 +9,20 @@ ul {
     margin: 0; /* Removes browser default settings */
     padding: 0; /* Removes browser default settings */
     background-color: #333;
-    overflow: hidden; /* overflow property manipulates our elements content if it's too big to fit in the space its occupying. Since our <ul> now only contains floated <li> elements, this makes it collapse to a height of zero, so we need to set our overflow to hidden to see our background color. We could also give our <ul> a height property instead of an overflow of hidden. Setting the overflow to hidden instead of giving our <ul> a height property allows us to change the height of our navbar with padding like we did in our a tags, and the text within the navbar will always be centered */
+    overflow: hidden; /* overflow property manipulates our elements content if it's too big to fit in the space its occupying. 
+    
+    Since we floated all of our list items (<li>), this makes it collapse to a height of zero, so we need to give our unordered list (<ul>) a height. 
+
+    (demonstrate change in height)
+    
+    We could also give our <ul> a property called overflow: hidden instead of a height. Setting the overflow to hidden instead of giving our <ul> a height property allows us to change the height of our navbar with padding like we did in our a tags, and the text within the navbar will always be centered */
 }
 
 li {
     float: left; /* By default, <li> elements are block elements (meaning they will stack on top of eachother. Use float to get block elements to slide next to eachother */
 }
 
-/* <li> is our ancestor(or parent) element / and <a> is our descendant element. This selector will manipulate all of our <a> elements that have an ancestor element of <li> */
+/* <li> is our ancestor(or parent) element / and <a> is our descendant element. Writing it like this will manipulate all of our <a> elements that have an ancestor element of <li> */
 li a {
     display: block; /* Displaying the links as block elements makes the whole link area clickable (not just the text), and it allows us to specify padding, height, width, margins, etc. if we want to */
     padding: 20px 16px; /* 20px from the top, 16px from the left of each <a> tag */
